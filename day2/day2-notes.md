@@ -1,0 +1,2 @@
+The output was object
+
