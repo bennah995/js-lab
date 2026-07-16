@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="calc-container">
+      <div class="top-bar">
+        <h2>Simple Calculator</h2>
+        <button id="theme-toggle" type="button" title="Toggle dark mode">🌙</button>
+      </div>
+
+      <!-- Input fields for the two operands -->
+      <div class="input-group">
+        <input id="num1" type="text" placeholder="First number" />
+        <input id="num2" type="text" placeholder="Second number" />
+      </div>
+
+      <!-- Operator buttons - each stores its operator in a data-op attribute -->
+      <div class="operator-buttons">
+        <button data-op="+">+</button>
+        <button data-op="-">-</button>
+        <button data-op="*">x</button>
+        <button data-op="/">/</button>
+      </div>
+
+      <button id="clear-btn" type="button">Clear</button>
+
+      <!-- Result is written here by JavaScript -->
+      <div id="result"></div>
+
+      <!-- Calculation history -->
+      <ul id="history"></ul>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
